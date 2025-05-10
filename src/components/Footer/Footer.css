@@ -46,3 +46,20 @@
   background-color: grey;
   border: none;
 }
+
+@media(max-width:750px){
+  .footer-content{
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+  }
+}
+.footer-copyright{
+  text-align: center;
+  /* .footer-content-left, .footer-content-right , .footer-content-center{
+    align-items: center;
+  }
+  .footer-content-left li, .footer-content-right li, .footer-content-center li{
+    text-align: center;
+  } */
+}
