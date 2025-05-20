@@ -9,16 +9,18 @@ import LoginPopup from './components/LoginPopup/LoginPopup'
 
 
 const App = () => {
+
   const [showLogin,setShowLogin] = useState(false)
+  
   return (
     <>
     {showLogin?<LoginPopup setShowLogin={setShowLogin} />  :<></>}
       <div className='app'>
         <Navbar setShowLogin = {setShowLogin}/>  
         <Routes>
-          <Route path='/' element={<Home/>}></Route>
-          <Route path='/cart' element={<Cart/>}></Route>
-          <Route path='/order' element={<PlaceOrder/>}></Route>
+          <Route path='/' element={<Home />}></Route>
+          <Route path='/cart' element={<Cart />}></Route>
+          <Route path='/order' element={<PlaceOrder />}></Route>
         </Routes>
       </div>
       <Footer />
